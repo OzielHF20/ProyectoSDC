@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facturación</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1D5C70;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1D5C70;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header img {
+      width: 700px; /* Ajusta el ancho de la imagen según sea necesario */
+      margin-bottom: 10px; /* Espacio entre la imagen y el título */
+    }
+
+    header h1 {
+      margin: 0; /* Elimina el margen predeterminado del título */
+    }
+
+    nav {
+      background-color: #1D5C70;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .billing-form {
+      background-color: #C8CBC7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #c21919;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imagenes/LOGO2.png" alt="Imagen de encabezado">
+    <h1>Facturación</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nuestrosproductos.html">Productos</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Mis Pedidos</a>
+      <a href="formadepago.html">Pagos</a>
+      <a href="#">Cuenta</a>
+      <a href="#">Ayuda</a>
+    </nav>
+  </header>
+
+  <div class="billing-form">
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido_paterno">Apellido Paterno:</label>
+      <input type="text" id="apellido_paterno" name="apellido_paterno" required>
+
+      <label for="apellido_materno">Apellido Materno:</label>
+      <input type="text" id="apellido_materno" name="apellido_materno" required>
+
+      <label for="rfc">RFC:</label>
+      <input type="text" id="rfc" name="rfc" required>
+
+      <label for="id_pedido">ID del Pedido:</label>
+      <input type="text" id="id_pedido" name="id_pedido" required>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" required>
+
+      <label for="calle">Calle:</label>
+      <input type="text" id="calle" name="calle" required>
+
+      <label for="colonia">Colonia:</label>
+      <input type="text" id="colonia" name="colonia" required>
+
+      <label for="numero_interior">Número Interior:</label>
+      <input type="text" id="numero_interior" name="numero_interior">
+
+      <label for="numero_exterior">Número Exterior:</label>
+      <input type="text" id="numero_exterior" name="numero_exterior">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Productos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1D5C70;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1D5C70;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header img {
+      width: 800px; /* Ajusta el ancho de la imagen según sea necesario */
+      margin-bottom: 10px; /* Espacio entre la imagen y el título */
+    }
+
+    header h1 {
+      margin: 0; /* Elimina el margen predeterminado del título */
+    }
+
+    nav {
+      background-color: #1D5C70;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .product {
+      width: 200px;
+      background-color: #C8CBC7;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+
+    .add-to-cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      background-color: #c21919;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imagenes/LOGO2.png" alt="Imagen de encabezado">
+    <h1>Nuestros Productos</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Mis Pedidos</a>
+      <a href="#">Pagos</a>
+      <a href="#">Cuenta</a>
+      <a href="#">Ayuda</a>
+    </nav>
+  </header>
+
+  <div style="display: flex; align-items: center; margin-top: 20px;">
+    <div style="margin-left: 20px;">
+      <img src="imagenes/carrito.png" alt="Icono de carrito de compras" style="width: 50px;">
+      <span>Ver Carrito</span>
+    </div>
+    <input type="text" placeholder="Buscar..." style="margin-left: auto; margin-right: 20px;">
+  </div>
+
+  <div class="product-container">
+    <div class="product">
+      <img src="imagenes/iphone 15.jpg" alt="Producto 1">
+      <div class="add-to-cart">
+        <button>Añadir</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="imagenes/samsung galaxy.jpg" alt="Producto 2">
+      <div class="add-to-cart">
+        <button>Añadir</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="imagenes/oppo reno7.jpg" alt="Producto 3">
+      <div class="add-to-cart">
+        <button>Añadir</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
