@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Proveedores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1D5C70;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1D5C70;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0; /* Elimina el margen predeterminado del título */
+    }
+
+    nav {
+      background-color: #1D5C70;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .provider-form {
+      background-color: #C8CBC7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #c21919;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imagenes/LOGO2.png" alt="Imagen de encabezado">
+    <h1>Registrar Proveedores</h1>
+    <nav>
+      <a href="#">Registro</a>
+      <a href="#">Gestionar Pedidos</a>
+      <a href="#">Actividades Pendientes</a>
+      <a href="#">Cuenta</a>
+      <a href="#">Ayuda</a>
+    </nav>
+  </header>
+
+  <div class="provider-form">
+    <form>
+      <label for="nombre_empresa">Nombre Empresa:</label>
+      <input type="text" id="nombre_empresa" name="nombre_empresa" required>
+
+      <label for="nombre_encargado">Nombre del Encargado:</label>
+      <input type="text" id="nombre_encargado" name="nombre_encargado" required>
+
+      <label for="apellido_paterno">Apellido Paterno:</label>
+      <input type="text" id="apellido_paterno" name="apellido_paterno" required>
+
+      <label for="apellido_materno">Apellido Materno:</label>
+      <input type="text" id="apellido_materno" name="apellido_materno" required>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="nif">NIF:</label>
+      <input type="text" id="nif" name="nif" required>
+
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+
+</body>
+</html>
