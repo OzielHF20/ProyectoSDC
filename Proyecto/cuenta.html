@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Cuenta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1D5C70;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1D5C70;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0; /* Elimina el margen predeterminado del título */
+    }
+
+    nav {
+      background-color: #1D5C70;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .account-info {
+      text-align: center;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    .action-list {
+      background-color: #C8CBC7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin: 20px auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .action-item {
+      display: flex;
+      align-items: center;
+      background-color: #1D5C70;
+      color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      max-width: 280px; /* Ajusta el ancho máximo de los elementos */
+    }
+
+    .action-item img {
+      max-width: 20px; /* Ajusta el tamaño máximo de los iconos */
+      margin-right: 10px; /* Agrega un espacio entre el icono y el texto */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imagenes/LOGO2.png" alt="Imagen de encabezado">
+    <h1>Mi Cuenta</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Mis Pedidos</a>
+      <a href="#">Pagos</a>
+      <a href="#">Cuenta</a>
+      <a href="#">Ayuda</a>
+    </nav>
+  </header>
+
+  <div class="account-info">
+    <p>Nombre Completo: Nombre Apellido</p>
+  </div>
+
+  <div class="action-list">
+    <a href="#" class="action-item"><img src="imagenes/modificar.png" alt="Icono de modificar datos">Modificar Datos Personales</a>
+    <a href="#" class="action-item"><img src="imagenes/privacidad-de-datos.png" alt="Icono de cambiar contraseña">Cambiar Contraseña</a>
+    <a href="#" class="action-item"><img src="imagenes/privacidad-de-datos.png" alt="Icono de privacidad">Privacidad</a>
+    <a href="#" class="action-item"><img src="imagenes/informar-error.png" alt="Icono de informar error">Informar de algún Error</a>
+    <a href="#" class="action-item"><img src="imagenes/cerrar-sesion.png" alt="Icono de cerrar sesión">Cerrar Sesión</a>
+    <a href="#" class="action-item"><img src="imagenes/eliminar-cuenta.png" alt="Icono de eliminar cuenta">Eliminar Cuenta</a>
+  </div>
+
+</body>
+</html>
